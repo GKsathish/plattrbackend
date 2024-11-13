@@ -10,7 +10,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/recipe-sharing-platform', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect('mongodb://localhost:27017/recipe-sharing-platform', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://172.22.9.47:27017/recipe-sharing-platform', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Check if MongoDB is connected
 mongoose.connection.on('connected', () => {
